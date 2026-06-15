@@ -1,29 +1,28 @@
-# DM_DeviceSDK
+# DM Device SDK
 
-中文 | [EN](./README.en.md) | GitHub 英文展示仓：`dmBots/dmBot`
+[English](./README.md) | [Gitee Chinese](https://gitee.com/kit-miao/dm-device-sdk)
 
-## 概述
+## Overview
 
-- 本目录是达妙 USB 类设备通用 SDK 的总入口。
-- 如果你是要把 USB2CANFD、USB2CANFD_Dual、LinkX4C等设备接到自己的软件里，先从这里判断是否该走通用 SDK，而不是旧版 USB2CANFD 专用 SDK。
-- 当前公开的高频入口是 [C&C++/README.md](C&C++/README.md)；GitHub 镜像覆盖差异请看 [../../../docs/repository/mirror-scope.md](../../../docs/repository/mirror-scope.md)。
+- This repository is the public entry point for the DAMIAO generic USB device SDK.
+- Use it when integrating USB2CANFD, USB2CANFD Dual, LinkX 4C, or similar DAMIAO USB devices into your own software.
+- For the currently published C / C++ branch, start with [C&C++/README.md](C&C++/README.md).
 
-## 文档 / 资源
+## Resources
 
-- [C&C++/README.md](C&C++/README.md) - C / C++ SDK 主入口；先在这里看快速接入、示例和库文件位置
-- [../USB2CANFD/SDK/README.md](../USB2CANFD/SDK/README.md) - 如果你只做 USB2CANFD 专用接入，可对比这个专用 SDK 入口
-- [../README.md](../README.md) - 返回 `dm-tools` 总入口
-- [../../../docs/repository/mirror-scope.md](../../../docs/repository/mirror-scope.md) - 查看 GitHub / Gitee 覆盖范围差异
+- [C&C++/README.md](C&C++/README.md) - C / C++ SDK entry, examples, headers, and library locations
+- [USB2CANFD legacy SDK](https://github.com/dmBots/dm-tools/blob/master/USB2CANFD/SDK/README.md) - legacy USB2CANFD-specific SDK route
+- [dm-tools](https://github.com/dmBots/dm-tools) - tool repository entry
+- [GitHub / Gitee coverage notes](https://github.com/dmBots/dmBot/blob/master/docs/repository/mirror-scope.md) - mirror coverage policy
 
-## 快速开始
+## Quick Start
 
-- 想做通用 C / C++ 接入：先看 [C&C++/README.md](C&C++/README.md)，再跳到 `USAGE.md`。
-- 想找示例、头文件、动态库和版本记录：先看 [C&C++/README.md](C&C++/README.md)，它会再把你分到 `example/`、`lib/` 和 `UPDATE.md`。
-- 想做更新的通用 USB 设备接入：优先走本目录；如果你只做 USB2CANFD 旧版专用接入，再看 [../USB2CANFD/SDK/README.md](../USB2CANFD/SDK/README.md)。
-- 想知道 GitHub 有没有同等覆盖：先看 [../../../docs/repository/mirror-scope.md](../../../docs/repository/mirror-scope.md)。
+- For generic C / C++ integration, open [C&C++/README.md](C&C++/README.md), then continue to `USAGE.md`.
+- For examples, headers, dynamic libraries, and release notes, start from the C / C++ entry and follow its branch-specific links.
+- Use this repository for new generic USB device integrations; use the legacy USB2CANFD SDK only for compatibility with older projects.
 
-## 状态
+## Status
 
-- ZH: 主版入口
-- EN: `README.en.md` 可用
-- TBD: 其他语言分支后续按实际资料补齐
+- EN: main GitHub entry
+- ZH: primary Chinese source is maintained on Gitee
+- TBD: additional language branches will be mirrored as public materials become available
